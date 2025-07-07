@@ -6,6 +6,8 @@ theme = "PaperMod"
 [params]
   ShowReadingTime = true
   ShowBreadCrumbs = true
+  env = "production"
+  disableAnalytics = true
 
 [menu]
   [[menu.main]]
