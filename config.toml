@@ -1,6 +1,6 @@
 baseURL = "https://saadfakhreddine.github.io/"
 languageCode = "en-us"
-title = "My Hugo Blog"
+title = "Saad Labs"
 theme = "PaperMod"
 
 [params]
@@ -8,13 +8,10 @@ theme = "PaperMod"
   ShowBreadCrumbs = true
   env = "production"
   disableAnalytics = true
+  homeInfoParams = false
+  mainSections = ["posts"]
 
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
-    weight = 2
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
