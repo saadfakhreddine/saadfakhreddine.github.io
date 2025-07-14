@@ -10,8 +10,16 @@ theme = "PaperMod"
   disableAnalytics = true
   homeInfoParams = false
   mainSections = ["posts"]
+  title = "Saad Labs"
+  description = "A blog documenting my tech journey and labs."
+  author = "Saad Fakhreddine"
+  keywords = ["Hugo", "PaperMod", "Tech Blog", "Labs"]
 
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/saadfakhreddine"
