@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on Saad Labs</title>
+    <link>http://localhost:1313/categories/linux/</link>
+    <description>Recent content in Linux on Saad Labs</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jul 2025 19:29:45 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Another Test2</title>
+      <link>http://localhost:1313/posts/another-test2/</link>
+      <pubDate>Mon, 07 Jul 2025 19:29:45 +0000</pubDate>
+      <guid>http://localhost:1313/posts/another-test2/</guid>
+      <description>&lt;p&gt;feimfiremw
+frewjfirejwifjre
+freiwfriemw
+fremiwfmnreiwnmnmfre
+frneiwfnrien&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

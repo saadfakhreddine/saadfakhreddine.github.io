@@ -23,3 +23,12 @@ theme = "PaperMod"
 [[params.socialIcons]]
   name = "github"
   url = "https://github.com/saadfakhreddine"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  weight = 3
