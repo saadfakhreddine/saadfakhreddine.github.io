@@ -15,6 +15,7 @@ theme = "PaperMod"
   author = "Saad Fakhreddine"
   keywords = ["Hugo", "PaperMod", "Tech Blog", "Labs"]
   ShowPostDate = false
+  ShowMeta = false
 
 
 [outputs]
