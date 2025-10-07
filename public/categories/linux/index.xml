@@ -4,20 +4,23 @@
     <title>Linux on Saad Labs</title>
     <link>http://localhost:1313/categories/linux/</link>
     <description>Recent content in Linux on Saad Labs</description>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo -- 0.149.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Jul 2025 19:29:45 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Another Test2</title>
-      <link>http://localhost:1313/posts/another-test2/</link>
-      <pubDate>Mon, 07 Jul 2025 19:29:45 +0000</pubDate>
-      <guid>http://localhost:1313/posts/another-test2/</guid>
-      <description>&lt;p&gt;feimfiremw
-frewjfirejwifjre
-freiwfriemw
-fremiwfmnreiwnmnmfre
-frneiwfnrien&lt;/p&gt;</description>
+      <title>Troubleshooting common Linux issues</title>
+      <link>http://localhost:1313/posts/troubleshooting_common_linux_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/troubleshooting_common_linux_issues/</guid>
+      <description>&lt;h2 id=&#34;kernel-panics&#34;&gt;Kernel panics&lt;/h2&gt;
+&lt;p&gt;A kernel panic is a safety measure by an operating system when it detects a critical error it can&amp;rsquo;t recover from. This causes the system to stop and display an error message.&lt;/p&gt;
+&lt;h3 id=&#34;symptoms&#34;&gt;Symptoms&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;System unresponsiveness:&lt;/strong&gt; The system becomes completely unresponsive, necessitating a manual restart.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Kernel panic message:&lt;/strong&gt; A message indicates a kernel panic, typically containing a stack trace, error codes, and sometimes hardware and driver information. The message can be cryptic and technical, displaying information like &amp;ldquo;Kernel panic—not syncing: Attempted to kill init!&amp;rdquo; followed by a stack trace.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

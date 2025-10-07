@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dns Server on Saad Labs</title>
+    <link>http://localhost:1313/tags/dns-server/</link>
+    <description>Recent content in Dns Server on Saad Labs</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/dns-server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Troubleshooting DNS issues</title>
+      <link>http://localhost:1313/posts/troubleshooting_dns_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/troubleshooting_dns_issues/</guid>
+      <description>&lt;h2 id=&#34;unable-to-resolve-domain-names&#34;&gt;Unable to resolve domain names&lt;/h2&gt;
+&lt;p&gt;A common DNS issue is the inability to resolve domain names, which can result in websites being inaccessible despite an active Internet connection.&lt;/p&gt;
+&lt;h3 id=&#34;causes-and-solutions&#34;&gt;Causes and solutions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Incorrect DNS server configuration:&lt;/strong&gt; Ensure the DNS server addresses are correctly configured on client devices. To do so open a command prompt on the client device. Type nslookup &lt;!-- raw HTML omitted --&gt; and press &lt;strong&gt;Enter&lt;/strong&gt;. Verify that the DNS server listed in the output is the correct one and is resolving domain names correctly. Note you have to enter the specific domain details, not type just &amp;ldquo;domain&amp;rdquo;. For example, you could use nslookup google.com.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

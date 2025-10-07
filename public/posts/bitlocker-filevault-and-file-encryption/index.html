@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>T | Saad Labs</title>
+<meta name="keywords" content="">
+<meta name="description" content="Introduction
+Users often store sensitive data on their devices, including financial documents and personal photos. This information requires robust protection, and that&rsquo;s where file encryption comes into play. Encryption scrambles data, making it unreadable without a decryption key, effectively acting as a digital shield.
+This reading prepares you to support users with file encryption, specifically focusing on BitLocker for Windows and FileVault for macOS. You&rsquo;ll explore how these tools work, the importance of encryption, and situations where it&rsquo;s most valuable. You&rsquo;ll also learn the setup process, data recovery methods, and best practices to maintain effective encryption.
+Why is file encryption necessary?">
+<meta name="author" content="Saad Fakhreddine">
+<link rel="canonical" href="http://localhost:1313/posts/bitlocker-filevault-and-file-encryption/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/bitlocker-filevault-and-file-encryption/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/posts/bitlocker-filevault-and-file-encryption/">
+  <meta property="og:site_name" content="Saad Labs">
+  <meta property="og:title" content="T">
+  <meta property="og:description" content="Introduction
+Users often store sensitive data on their devices, including financial documents and personal photos. This information requires robust protection, and that’s where file encryption comes into play. Encryption scrambles data, making it unreadable without a decryption key, effectively acting as a digital shield.
+This reading prepares you to support users with file encryption, specifically focusing on BitLocker for Windows and FileVault for macOS. You’ll explore how these tools work, the importance of encryption, and situations where it’s most valuable. You’ll also learn the setup process, data recovery methods, and best practices to maintain effective encryption. Why is file encryption necessary?">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-08-27T20:17:50+00:00">
+    <meta property="article:modified_time" content="2025-08-27T20:17:50+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="T">
+<meta name="twitter:description" content="Introduction
+Users often store sensitive data on their devices, including financial documents and personal photos. This information requires robust protection, and that&rsquo;s where file encryption comes into play. Encryption scrambles data, making it unreadable without a decryption key, effectively acting as a digital shield.
+This reading prepares you to support users with file encryption, specifically focusing on BitLocker for Windows and FileVault for macOS. You&rsquo;ll explore how these tools work, the importance of encryption, and situations where it&rsquo;s most valuable. You&rsquo;ll also learn the setup process, data recovery methods, and best practices to maintain effective encryption.
+Why is file encryption necessary?">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "T",
+      "item": "http://localhost:1313/posts/bitlocker-filevault-and-file-encryption/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "T",
+  "name": "T",
+  "description": "Introduction\nUsers often store sensitive data on their devices, including financial documents and personal photos. This information requires robust protection, and that\u0026rsquo;s where file encryption comes into play. Encryption scrambles data, making it unreadable without a decryption key, effectively acting as a digital shield.\nThis reading prepares you to support users with file encryption, specifically focusing on BitLocker for Windows and FileVault for macOS. You\u0026rsquo;ll explore how these tools work, the importance of encryption, and situations where it\u0026rsquo;s most valuable. You\u0026rsquo;ll also learn the setup process, data recovery methods, and best practices to maintain effective encryption. Why is file encryption necessary?\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "Introduction\nUsers often store sensitive data on their devices, including financial documents and personal photos. This information requires robust protection, and that’s where file encryption comes into play. Encryption scrambles data, making it unreadable without a decryption key, effectively acting as a digital shield.\nThis reading prepares you to support users with file encryption, specifically focusing on BitLocker for Windows and FileVault for macOS. You’ll explore how these tools work, the importance of encryption, and situations where it’s most valuable. You’ll also learn the setup process, data recovery methods, and best practices to maintain effective encryption. Why is file encryption necessary?\nFile encryption is essential for securing sensitive information stored on a device or transmitted over a network. This includes personal, financial, or medical data. Without encryption, anyone accessing the device or intercepting the data can easily read, copy, or alter it. This can lead to identity theft, fraud, blackmail, or other serious consequences.\nFile encryption is especially important in scenarios where the device or data is at risk of being lost, stolen, or compromised, such as:\nTraveling with a laptop, tablet, or smartphone that contains confidential or personal data Using a public or shared computer or network to access or send sensitive data Storing or backing up data on an external hard drive, USB flash drive, or cloud service Disposing of or selling an old device that has not been wiped clean of data The inner workings of encryption: Making data unreadable\nAt its core, encryption utilizes complex algorithms to transform data into an unreadable format. This process involves replacing the original data with a seemingly randomized sequence of characters. This makes it impossible to decipher without the corresponding decryption key.\nThe strength of encryption is directly linked to the encryption algorithm’s complexity and the decryption key’s length. Popular encryption tools, like Bitlocker and FileVault, employ the Advanced Encryption Standard (AES). The AES is considered a gold standard in data security, with a key length of 256 bits. This combination provides virtually unbreakable protection for your files. Why encryption matters\nEncryption serves as a critical defense mechanism, safeguarding your sensitive information from unauthorized access in various scenarios like the following.\nLost or stolen devices: Encryption acts as a powerful deterrent if your laptop, phone, or external storage device is lost or stolen. Even if the device falls into the wrong hands, the encrypted data remains inaccessible without the decryption key. This reduces the risk of data breaches and identity theft. Unauthorized access: Encryption ensures your data remains secure, whether on a shared computer or in situations where unauthorized access is a concern. Even if someone gains access to your device, they'll be unable to access your encrypted files without the decryption key. Compliance requirements: Certain industries and organizations have strict data protection regulations that make the use of encryption for sensitive information compulsory. Utilizing encryption tools like BitLocker and FileVault helps ensure compliance with these regulations. Understanding BitLocker and FileVault: Tools for secure data storage\nBitlocker: This built-in feature for Windows devices offers full-disk encryption, safeguarding the entire contents of your drive. This includes the operating system, applications, and personal files. Bitlocker leverages the Trusted Platform Module (TPM) chip, a hardware security component present in most modern Windows devices, to further enhance its security.\nFileVault: This macOS counterpart offers similar functionality, encrypting the entire disk, including the operating system and user data. FileVault utilizes the Secure Boot feature on Macs to provide additional protection against unauthorized access during boot-up. Setting up encryption: a straightforward process\nEnabling encryption on your device is a relatively straightforward process. Both Bitlocker and FileVault offer user-friendly interfaces that guide you through the setup steps. Typically, you’ll be prompted to choose a strong password or passphrase and, in some cases, create a recovery key. This recovery key is crucial for accessing your data if you forget your password or lose access to your device. It’s essential to store your recovery key securely, ideally in a physical location separate from your device. How to activate and set up BitLocker\nGo to Settings \u003e Privacy \u0026 security \u003e Device encryption \u003e BitLocker drive encryption. Note that you have to be logged into your Microsoft account to continue the process. If the device meets the requirements, turn it On. If not, follow the instructions to upgrade or configure the device. Windows privacy and security settings where you can toggle device encryption on or off Windows privacy and security settings page where you select device encryption which gives you an option to toggle it on or off\nAlternatively, you can navigate to Control Panel \u003e System and Security \u003e BitLocker Drive Encryption and select Turn on Bitlocker. Control panel system and security page with BitLocker Drive Encryption setting available Control panel is open to the system and security page with Bitlocker Drive Encryption option selected. There is a button you can use to turn Bitlocker on\nAfter initial activation, there are some additional steps to take.\nChoose how to unlock the device: with a password, a PIN, or both. Enter and confirm the password or PIN, and select Next. Choose how to back up the recovery key: by saving it to a file, printing it, or storing it on a Microsoft account. Make sure to keep the recovery key in a safe and accessible place, as it will be needed to access the device if the password or PIN is lost. Choose how much of the drive to encrypt: the used space only or the entire drive. The used space only option is faster and recommended for new devices, while the entire drive option is more secure and recommended for devices that have been used before. Select Start encrypting. Depending on the size and speed of the drive, the encryption process may take some time. The device can be used normally during the encryption, but it is recommended that you keep it plugged in and avoid turning it off or restarting it. Once the encryption is complete, the device will be protected by BitLocker. How to activate and set up FileVault\nTo use FileVault, the device must have macOS 10.7 or later and a password-protected user account. To allow FileVault go to System Preferences \u003e Privacy \u0026 Security \u003e FileVault. Select the lock icon and enter the administrator password. Change the setting from Turn Off to Turn On to activate FileVault. Privacy and security page in system preferences is open. File Vault on or off option is highlighted. Apple device’s system preferences page is open on the privacy and security section. Filevault turn off or on option is highlighted.\nAfter initial activation, there are some additional steps to take.\nChoose how to unlock the device, with the user account password or with a recovery key. If you choose the recovery key option, make sure to write down or print the recovery key and keep it in a safe and accessible place. It will be needed to access the device if the user account password is lost. You can choose whether to allow Apple to store the recovery key on iCloud or locally. If you choose the iCloud option, enter the Apple ID and password, and select Continue. If you choose the local option, click on Continue. The encryption process will begin, and it may take some time, depending on the size and speed of the drive. The device can be used normally during the encryption, but it is recommended that you keep it plugged in. Once the encryption is complete, the device will be protected by FileVault. Recovering encrypted data: Safeguarding access\nWhile encryption offers unparalleled security, it’s crucial to remember that losing your password or recovery key can render your data inaccessible. Therefore, it’s essential to:\nChoose a solid and memorable password: For optimal strength, use a combination of uppercase and lowercase letters, numbers, and symbols. Store your recovery key securely: Never store your recovery key on your encrypted device. Consider writing it down on paper and keeping it in a secure location, or utilize a trusted password manager. Regularly back up your recovery key: Create backups of your recovery key and store them in separate locations for added security. ",
+  "wordCount" : "1362",
+  "inLanguage": "en",
+  "datePublished": "2025-08-27T20:17:50Z",
+  "dateModified": "2025-08-27T20:17:50Z",
+  "author":{
+    "@type": "Person",
+    "name": "Saad Fakhreddine"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/bitlocker-filevault-and-file-encryption/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Saad Labs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Saad Labs (Alt + H)">Saad Labs</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      T
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-08-27 20:17:50 +0000 UTC'>August 27, 2025</span>&nbsp;·&nbsp;7 min&nbsp;·&nbsp;Saad Fakhreddine
+
+</div>
+  </header> 
+  <div class="post-content"><p>Introduction</p>
+<p>Users often store sensitive data on their devices, including financial documents and personal photos. This information requires robust protection, and that&rsquo;s where file encryption comes into play. Encryption scrambles data, making it unreadable without a decryption key, effectively acting as a digital shield.</p>
+<p>This reading prepares you to support users with file encryption, specifically focusing on BitLocker for Windows and FileVault for macOS. You&rsquo;ll explore how these tools work, the importance of encryption, and situations where it&rsquo;s most valuable. You&rsquo;ll also learn the setup process, data recovery methods, and best practices to maintain effective encryption.
+Why is file encryption necessary?</p>
+<p>File encryption is essential for securing sensitive information stored on a device or transmitted over a network. This includes personal, financial, or medical data. Without encryption, anyone accessing the device or intercepting the data can easily read, copy, or alter it. This can lead to identity theft, fraud, blackmail, or other serious consequences.</p>
+<p>File encryption is especially important in scenarios where the device or data is at risk of being lost, stolen, or compromised, such as:</p>
+<pre><code>Traveling with a laptop, tablet, or smartphone that contains confidential or personal data
+
+Using a public or shared computer or network to access or send sensitive data
+
+Storing or backing up data on an external hard drive, USB flash drive, or cloud service
+
+Disposing of or selling an old device that has not been wiped clean of data
+</code></pre>
+<p>The inner workings of encryption: Making data unreadable</p>
+<p>At its core, encryption utilizes complex algorithms to transform data into an unreadable format. This process involves replacing the original data with a seemingly randomized sequence of characters. This makes it impossible to decipher without the corresponding decryption key.</p>
+<p>The strength of encryption is directly linked to the encryption algorithm&rsquo;s complexity and the decryption key&rsquo;s length. Popular encryption tools, like Bitlocker and FileVault, employ the Advanced Encryption Standard (AES). The AES is considered a gold standard in data security, with a key length of 256 bits. This combination provides virtually unbreakable protection for your files.
+Why encryption matters</p>
+<p>Encryption serves as a critical defense mechanism, safeguarding your sensitive information from unauthorized access in various scenarios like the following.</p>
+<pre><code>Lost or stolen devices: Encryption acts as a powerful deterrent if your laptop, phone, or external storage device is lost or stolen. Even if the device falls into the wrong hands, the encrypted data remains inaccessible without the decryption key. This reduces the risk of data breaches and identity theft.
+
+Unauthorized access: Encryption ensures your data remains secure, whether on a shared computer or in situations where unauthorized access is a concern. Even if someone gains access to your device, they'll be unable to access your encrypted files without the decryption key.
+
+Compliance requirements: Certain industries and organizations have strict data protection regulations that make the use of encryption for sensitive information compulsory. Utilizing encryption tools like BitLocker and FileVault helps ensure compliance with these regulations.
+</code></pre>
+<p>Understanding BitLocker and FileVault: Tools for secure data storage</p>
+<p>Bitlocker: This built-in feature for Windows devices offers full-disk encryption, safeguarding the entire contents of your drive. This includes the operating system, applications, and personal files. Bitlocker leverages the Trusted Platform Module (TPM) chip, a hardware security component present in most modern Windows devices, to further enhance its security.</p>
+<p>FileVault: This macOS counterpart offers similar functionality, encrypting the entire disk, including the operating system and user data. FileVault utilizes the Secure Boot feature on Macs to provide additional protection against unauthorized access during boot-up.
+Setting up encryption: a straightforward process</p>
+<p>Enabling encryption on your device is a relatively straightforward process. Both Bitlocker and FileVault offer user-friendly interfaces that guide you through the setup steps. Typically, you&rsquo;ll be prompted to choose a strong password or passphrase and, in some cases, create a recovery key. This recovery key is crucial for accessing your data if you forget your password or lose access to your device. It&rsquo;s essential to store your recovery key securely, ideally in a physical location separate from your device.
+How to activate and set up BitLocker</p>
+<pre><code>Go to Settings &gt; Privacy &amp; security &gt; Device encryption &gt; BitLocker drive encryption. Note that you have to be logged into your Microsoft account to continue the process. If the device meets the requirements, turn it On. If not, follow the instructions to upgrade or configure the device. 
+</code></pre>
+<p>Windows privacy and security settings where you can toggle device encryption on or off
+Windows privacy and security settings page where you select device encryption which gives you an option to toggle it on or off</p>
+<pre><code>Alternatively, you can navigate to Control Panel &gt; System and Security &gt; BitLocker Drive Encryption and select Turn on Bitlocker.
+</code></pre>
+<p>Control panel system and security page with BitLocker Drive Encryption setting available
+Control panel is open to the system and security page with Bitlocker Drive Encryption option selected. There is a button you can use to turn Bitlocker on</p>
+<p>After initial activation, there are some additional steps to take.</p>
+<pre><code>Choose how to unlock the device: with a password, a PIN, or both. Enter and confirm the password or PIN, and select Next.
+
+Choose how to back up the recovery key: by saving it to a file, printing it, or storing it on a Microsoft account. Make sure to keep the recovery key in a safe and accessible place, as it will be needed to access the device if the password or PIN is lost.
+
+Choose how much of the drive to encrypt: the used space only or the entire drive. The used space only option is faster and recommended for new devices, while the entire drive option is more secure and recommended for devices that have been used before.
+
+Select Start encrypting. Depending on the size and speed of the drive, the encryption process may take some time. The device can be used normally during the encryption, but it is recommended that you keep it plugged in and avoid turning it off or restarting it.
+
+Once the encryption is complete, the device will be protected by BitLocker. 
+</code></pre>
+<p>How to activate and set up FileVault</p>
+<pre><code>To use FileVault, the device must have macOS 10.7 or later and a password-protected user account.
+
+To allow FileVault go to System Preferences &gt; Privacy &amp; Security &gt; FileVault. Select the lock icon and enter the administrator password. Change the setting from Turn Off to Turn On to activate FileVault.
+</code></pre>
+<p>Privacy and security page in system preferences is open. File Vault on or off option is highlighted.
+Apple device&rsquo;s system preferences page is open on the privacy and security section. Filevault turn off or on option is highlighted.</p>
+<p>After initial activation, there are some additional steps to take.</p>
+<pre><code>Choose how to unlock the device, with the user account password or with a recovery key. If you choose the recovery key option, make sure to write down or print the recovery key and keep it in a safe and accessible place. It will be needed to access the device if the user account password is lost.
+
+You can choose whether to allow Apple to store the recovery key on iCloud or locally. If you choose the iCloud option, enter the Apple ID and password, and select Continue. If you choose the local option, click on Continue.
+
+The encryption process will begin, and it may take some time, depending on the size and speed of the drive. The device can be used normally during the encryption, but it is recommended that you keep it plugged in.
+
+Once the encryption is complete, the device will be protected by FileVault.
+</code></pre>
+<p>Recovering encrypted data: Safeguarding access</p>
+<p>While encryption offers unparalleled security, it&rsquo;s crucial to remember that losing your password or recovery key can render your data inaccessible. Therefore, it&rsquo;s essential to:</p>
+<pre><code>Choose a solid and memorable password: For optimal strength, use a combination of uppercase and lowercase letters, numbers, and symbols.
+
+Store your recovery key securely: Never store your recovery key on your encrypted device. Consider writing it down on paper and keeping it in a secure location, or utilize a trusted password manager.
+
+Regularly back up your recovery key: Create backups of your recovery key and store them in separate locations for added security.
+</code></pre>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Saad Labs</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -2,34 +2,142 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/categories/-networking/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/-system-administration/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/audio/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cli/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/commands/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/your-post-name/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/compatibility/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/components/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/connectivity/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/cybersecurity/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/dependency-errors/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/diagnostics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/dig/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/diy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/dns/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/dns/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/dns-server/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/drivers/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/event_viewer_and_system_information/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/event-viewer/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/file-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/guide/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/hardware/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/hardware/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/ipconfig/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/it-support/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/it-support/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/kernel-panic/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/leaks/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/linux/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/maintenance/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/maintenance/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/network/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/networking/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/networking/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/nslookup/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/optimization/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/pc-building/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/performance/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/performance/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/repair/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/repair/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/safety/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/security/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/software/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/software/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/sysadmin/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/system-administration/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/system-information/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ubuntu/</loc>
-    <lastmod>2025-07-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/technical-guides/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/another-test/</loc>
-    <lastmod>2025-07-07T19:27:53+00:00</lastmod>
+    <loc>http://localhost:1313/tags/tools/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/hello-world/</loc>
-    <lastmod>2025-07-07T15:59:31+00:00</lastmod>
+    <loc>http://localhost:1313/categories/troubleshooting/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/troubleshooting/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/troubleshooting_common_linux_issues/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/troubleshooting_common_vpn_issues/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/troubleshooting_dns_issues/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/troubleshooting_performance_audio_and_video_issues/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/upgrades/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/upgrades/</loc>
+  </url><url>
+    <loc>http://localhost:1313/posts/upgrading_and_repairing_computer_components_best_practices/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/video/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/vpn/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/vpn/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/windows/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/windows/</loc>
   </url>
 </urlset>

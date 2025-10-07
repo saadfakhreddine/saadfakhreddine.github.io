@@ -4,7 +4,7 @@
     <title>Ubuntu on Saad Labs</title>
     <link>http://localhost:1313/tags/ubuntu/</link>
     <description>Recent content in Ubuntu on Saad Labs</description>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
@@ -17,6 +17,13 @@
 fjhubcds
 fhufbsda
 hidshid&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/posts/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/about/</guid>
+      <description>&lt;p&gt;dcdec&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>File-System on Saad Labs</title>
+    <link>http://localhost:1313/tags/file-system/</link>
+    <description>Recent content in File-System on Saad Labs</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/file-system/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Troubleshooting common Linux issues</title>
+      <link>http://localhost:1313/posts/troubleshooting_common_linux_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/troubleshooting_common_linux_issues/</guid>
+      <description>&lt;h2 id=&#34;kernel-panics&#34;&gt;Kernel panics&lt;/h2&gt;
+&lt;p&gt;A kernel panic is a safety measure by an operating system when it detects a critical error it can&amp;rsquo;t recover from. This causes the system to stop and display an error message.&lt;/p&gt;
+&lt;h3 id=&#34;symptoms&#34;&gt;Symptoms&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;System unresponsiveness:&lt;/strong&gt; The system becomes completely unresponsive, necessitating a manual restart.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Kernel panic message:&lt;/strong&gt; A message indicates a kernel panic, typically containing a stack trace, error codes, and sometimes hardware and driver information. The message can be cryptic and technical, displaying information like &amp;ldquo;Kernel panic—not syncing: Attempted to kill init!&amp;rdquo; followed by a stack trace.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

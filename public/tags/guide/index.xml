@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Guide on Saad Labs</title>
+    <link>http://localhost:1313/tags/guide/</link>
+    <description>Recent content in Guide on Saad Labs</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Troubleshooting common VPN issues</title>
+      <link>http://localhost:1313/posts/troubleshooting_common_vpn_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/troubleshooting_common_vpn_issues/</guid>
+      <description>&lt;h2 id=&#34;scenario-1-connection-drops&#34;&gt;Scenario 1: Connection drops&lt;/h2&gt;
+&lt;p&gt;Users successfully connect to the VPN, but the connection unexpectedly drops after some time, leaving them without a secure internet connection.&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Check the internet connection:&lt;/strong&gt; Ensure their internet connection is stable and reliable. Try disconnecting and reconnecting the network adapter or router.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Update the VPN software:&lt;/strong&gt; Outdated VPN software can cause compatibility issues, leading to connection drops. Check for updates from the VPN provider and install the latest version.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Troubleshooting DNS issues</title>
+      <link>http://localhost:1313/posts/troubleshooting_dns_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/troubleshooting_dns_issues/</guid>
+      <description>&lt;h2 id=&#34;unable-to-resolve-domain-names&#34;&gt;Unable to resolve domain names&lt;/h2&gt;
+&lt;p&gt;A common DNS issue is the inability to resolve domain names, which can result in websites being inaccessible despite an active Internet connection.&lt;/p&gt;
+&lt;h3 id=&#34;causes-and-solutions&#34;&gt;Causes and solutions&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Incorrect DNS server configuration:&lt;/strong&gt; Ensure the DNS server addresses are correctly configured on client devices. To do so open a command prompt on the client device. Type nslookup &lt;!-- raw HTML omitted --&gt; and press &lt;strong&gt;Enter&lt;/strong&gt;. Verify that the DNS server listed in the output is the correct one and is resolving domain names correctly. Note you have to enter the specific domain details, not type just &amp;ldquo;domain&amp;rdquo;. For example, you could use nslookup google.com.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Troubleshooting performance, audio, and video issues</title>
+      <link>http://localhost:1313/posts/troubleshooting_performance_audio_and_video_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/troubleshooting_performance_audio_and_video_issues/</guid>
+      <description>&lt;h2 id=&#34;performance-issues&#34;&gt;Performance issues&lt;/h2&gt;
+&lt;p&gt;Performance issues such as lagging, stuttering, and freezing are prevalent, particularly in older or overburdened systems. These problems can arise from various sources.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Insufficient RAM:&lt;/strong&gt; When the system does not have enough memory to handle all running applications smoothly, it can start to lag or freeze.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Overloaded CPU:&lt;/strong&gt; If the CPU is continuously running at high capacity, it can lead to system slowdowns and unresponsiveness.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Outdated hardware:&lt;/strong&gt; Older hardware may not meet the requirements of newer software, leading to compatibility issues and poor performance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upgrading and repairing computer components: Best practices</title>
+      <link>http://localhost:1313/posts/upgrading_and_repairing_computer_components_best_practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/upgrading_and_repairing_computer_components_best_practices/</guid>
+      <description>&lt;h2 id=&#34;best-practices-for-upgrading-computer-components&#34;&gt;Best practices for upgrading computer components&lt;/h2&gt;
+&lt;h3 id=&#34;compatibility-check&#34;&gt;Compatibility check&lt;/h3&gt;
+&lt;p&gt;Ensuring compatibility is very important when upgrading computer components to avoid wasteful spending and damaging a system. Here’s a detailed approach to conducting a thorough compatibility check.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Motherboard compatibility:&lt;/strong&gt; Check the motherboard to determine what type of CPU socket it has, as this will dictate which processors you can install. Similarly, examine the RAM slots—the number and type of slots are crucial. Motherboard manuals and specifications on the manufacturer&amp;rsquo;s website can provide this information. Additionally, verify the amount and type of expansion slots to ensure that any new components will fit.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

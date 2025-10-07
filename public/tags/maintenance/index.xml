@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Maintenance on Saad Labs</title>
+    <link>http://localhost:1313/tags/maintenance/</link>
+    <description>Recent content in Maintenance on Saad Labs</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/maintenance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Troubleshooting performance, audio, and video issues</title>
+      <link>http://localhost:1313/posts/troubleshooting_performance_audio_and_video_issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/troubleshooting_performance_audio_and_video_issues/</guid>
+      <description>&lt;h2 id=&#34;performance-issues&#34;&gt;Performance issues&lt;/h2&gt;
+&lt;p&gt;Performance issues such as lagging, stuttering, and freezing are prevalent, particularly in older or overburdened systems. These problems can arise from various sources.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Insufficient RAM:&lt;/strong&gt; When the system does not have enough memory to handle all running applications smoothly, it can start to lag or freeze.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Overloaded CPU:&lt;/strong&gt; If the CPU is continuously running at high capacity, it can lead to system slowdowns and unresponsiveness.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Outdated hardware:&lt;/strong&gt; Older hardware may not meet the requirements of newer software, leading to compatibility issues and poor performance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Upgrading and repairing computer components: Best practices</title>
+      <link>http://localhost:1313/posts/upgrading_and_repairing_computer_components_best_practices/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/upgrading_and_repairing_computer_components_best_practices/</guid>
+      <description>&lt;h2 id=&#34;best-practices-for-upgrading-computer-components&#34;&gt;Best practices for upgrading computer components&lt;/h2&gt;
+&lt;h3 id=&#34;compatibility-check&#34;&gt;Compatibility check&lt;/h3&gt;
+&lt;p&gt;Ensuring compatibility is very important when upgrading computer components to avoid wasteful spending and damaging a system. Here’s a detailed approach to conducting a thorough compatibility check.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Motherboard compatibility:&lt;/strong&gt; Check the motherboard to determine what type of CPU socket it has, as this will dictate which processors you can install. Similarly, examine the RAM slots—the number and type of slots are crucial. Motherboard manuals and specifications on the manufacturer&amp;rsquo;s website can provide this information. Additionally, verify the amount and type of expansion slots to ensure that any new components will fit.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

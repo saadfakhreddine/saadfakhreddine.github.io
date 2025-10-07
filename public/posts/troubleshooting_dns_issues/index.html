@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Troubleshooting DNS issues | Saad Labs</title>
+<meta name="keywords" content="DNS, troubleshooting, network, connectivity, guide, commands, diagnostics, tools, dns server, ipconfig, nslookup, dig">
+<meta name="description" content="Unable to resolve domain names
+A common DNS issue is the inability to resolve domain names, which can result in websites being inaccessible despite an active Internet connection.
+Causes and solutions
+
+
+Incorrect DNS server configuration: Ensure the DNS server addresses are correctly configured on client devices. To do so open a command prompt on the client device. Type nslookup  and press Enter. Verify that the DNS server listed in the output is the correct one and is resolving domain names correctly. Note you have to enter the specific domain details, not type just &ldquo;domain&rdquo;. For example, you could use nslookup google.com.">
+<meta name="author" content="Saad Fakhreddine">
+<link rel="canonical" href="http://localhost:1313/posts/troubleshooting_dns_issues/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.8fe10233a706bc87f2e08b3cf97b8bd4c0a80f10675a143675d59212121037c0.css" integrity="sha256-j&#43;ECM6cGvIfy4Is8&#43;XuL1MCoDxBnWhQ2ddWSEhIQN8A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/troubleshooting_dns_issues/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/posts/troubleshooting_dns_issues/">
+  <meta property="og:site_name" content="Saad Labs">
+  <meta property="og:title" content="Troubleshooting DNS issues">
+  <meta property="og:description" content="Unable to resolve domain names A common DNS issue is the inability to resolve domain names, which can result in websites being inaccessible despite an active Internet connection.
+Causes and solutions Incorrect DNS server configuration: Ensure the DNS server addresses are correctly configured on client devices. To do so open a command prompt on the client device. Type nslookup and press Enter. Verify that the DNS server listed in the output is the correct one and is resolving domain names correctly. Note you have to enter the specific domain details, not type just “domain”. For example, you could use nslookup google.com.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="DNS">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Network">
+    <meta property="article:tag" content="Connectivity">
+    <meta property="article:tag" content="Guide">
+    <meta property="article:tag" content="Commands">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Troubleshooting DNS issues">
+<meta name="twitter:description" content="Unable to resolve domain names
+A common DNS issue is the inability to resolve domain names, which can result in websites being inaccessible despite an active Internet connection.
+Causes and solutions
+
+
+Incorrect DNS server configuration: Ensure the DNS server addresses are correctly configured on client devices. To do so open a command prompt on the client device. Type nslookup  and press Enter. Verify that the DNS server listed in the output is the correct one and is resolving domain names correctly. Note you have to enter the specific domain details, not type just &ldquo;domain&rdquo;. For example, you could use nslookup google.com.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Troubleshooting DNS issues",
+      "item": "http://localhost:1313/posts/troubleshooting_dns_issues/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Troubleshooting DNS issues",
+  "name": "Troubleshooting DNS issues",
+  "description": "Unable to resolve domain names A common DNS issue is the inability to resolve domain names, which can result in websites being inaccessible despite an active Internet connection.\nCauses and solutions Incorrect DNS server configuration: Ensure the DNS server addresses are correctly configured on client devices. To do so open a command prompt on the client device. Type nslookup and press Enter. Verify that the DNS server listed in the output is the correct one and is resolving domain names correctly. Note you have to enter the specific domain details, not type just \u0026ldquo;domain\u0026rdquo;. For example, you could use nslookup google.com.\n",
+  "keywords": [
+    "DNS", "troubleshooting", "network", "connectivity", "guide", "commands", "diagnostics", "tools", "dns server", "ipconfig", "nslookup", "dig"
+  ],
+  "articleBody": "Unable to resolve domain names A common DNS issue is the inability to resolve domain names, which can result in websites being inaccessible despite an active Internet connection.\nCauses and solutions Incorrect DNS server configuration: Ensure the DNS server addresses are correctly configured on client devices. To do so open a command prompt on the client device. Type nslookup and press Enter. Verify that the DNS server listed in the output is the correct one and is resolving domain names correctly. Note you have to enter the specific domain details, not type just “domain”. For example, you could use nslookup google.com.\nDNS server downtime: Verify that the DNS server is operational and reachable. Use the ping command to test connectivity to the DNS server by typing ping into the command prompt. If successful, you should see replies indicating that the server is reachable. Note that you have to enter the details of the specific DNS server, IP address, or hostname, not just type “DNS_server_IP_or_hostname”. For example, you can ping 8.8.8.8, which is Google’s public DNS server IP address.\nPropagation delays: Checking with DNS resolvers can help. To query a DNS record use nslookup to verify propagation status. nslookup will display the IP address(es) associated with the domain name, along with the DNS server(s) that provided the resolution. And then use dig to view detailed DNS query information. Changes to DNS records can take time to propagate, so patience is required.\nCommands Use nslookup to query the DNS server for domain resolution.\nUse dig for detailed DNS query information.\nUse ping to test connectivity to the DNS server.\nDNS server not responding When a DNS server does not respond, clients cannot resolve domain names, which can lead to a failure to access internet resources.\nCauses and solutions Server issues: Restart the DNS server or check for software updates.\nFirewall settings: Ensure firewalls are not blocking DNS traffic (port 53).\nNetwork issues: Check the network path between clients and the DNS server for disruptions.\nTools and commands Use tracert if you are using your computer to trace the route and identify where the communication fails. Remember to enter the specific DNS server’s details, don’t just type “DNS server”.\nReview DNS server logs for indications of failure. To do so, log into the server where the DNS service is running, and locate the directory where DNS server logs are stored. This can vary depending on the DNS server software and configuration.\nIncorrect DNS records Incorrect DNS records can lead to domain resolution issues, such as pointing to the wrong IP address or non-existent domains.\nCauses and solutions Manual entry errors: Double-check DNS entries for typos or incorrect values by using nslookup and dig.\nExpired records: Ensure DNS records are up to date and refresh if necessary. To do so you should log into your DNS management console. This could be hosted by your domain registrar, DNS hosting provider, or within your organization’s network infrastructure (e.g., Windows Server DNS Manager). Locate the section where DNS records are managed. This is often labeled as DNS Zone, DNS Records, or similar terminology. Scan through the list of DNS records to identify any records that may have expired or are due for renewal. Modify or renew expired DNS records as necessary.\nTools and commands Use nslookup and dig to verify DNS records.\nCheck the DNS management console for correct configurations.\nUsing diagnostic utilities ipconfig ipconfig is a command-line tool used primarily on Windows systems to display and manage network configuration settings. It provides detailed information about network interfaces, IP addresses, DNS settings, and more, which is essential for network troubleshooting and configuration management.\nipconfig /flushdns can be used to clear the DNS resolver cache.\nipconfig /all can be used to check DNS server settings on client devices.\nnslookup nslookup is used to query DNS servers and obtain domain name information. It helps diagnose DNS resolution issues and verify DNS configurations. Common commands include:\nnslookup to resolve a domain name to an IP address.\nnslookup followed by server address to switch to a different DNS server for queries.\ndig dig (Domain Information Groper) is a powerful tool for querying DNS servers and analyzing DNS responses. It provides more detailed output than nslookup. Common commands include:\ndig for a basic DNS query.\ndig +trace to perform a trace from the root servers to the authoritative server for the domain.\ndig @ to query a specific DNS server.\nAdvanced troubleshooting techniques for DNS These are essentially the same as the techniques used for DHCP troubleshooting but can also be applied to DNS issues.\nNetwork scanning Network scanning helps identify all devices on the network, their assigned IP addresses, and potential conflicts.\nUse nmap for comprehensive network scanning and host discovery.\nUse arp -a to view ARP cache and identify IP assignments.\nPacket analysis Packet analysis provides detailed insights into network traffic, helping identify DNS communication issues.\nUse Wireshark for capturing and analyzing network packets.\nFilter DNS traffic to isolate relevant packets for troubleshooting.\nServer log analysis Analyzing server logs can reveal configuration errors, software bugs, or network issues impacting DNS services.\nReview DNS server logs for query handling and resolution failures. Practical scenario: Fixing domain name resolution failures Users report that they cannot access specific websites due to DNS resolution failures. These are the steps you should follow to resolve the problem.\nVerify DNS configuration: Use ipconfig /all to check DNS server settings on client devices.\nQuery DNS records: Use nslookup and dig to check the DNS resolution.\nCheck DNS server status: Ensure the DNS server is operational and reachable using ping and tracert if you are using your computer.\nUpdate DNS records: Verify and correct DNS records in the DNS management console.\nClear DNS cache: Use ipconfig /flushdns to clear the DNS cache on client devices.\n",
+  "wordCount" : "968",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Saad Fakhreddine"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/troubleshooting_dns_issues/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Saad Labs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Saad Labs (Alt + H)">Saad Labs</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Troubleshooting DNS issues
+    </h1>
+  </header> 
+  <div class="post-content"><h2 id="unable-to-resolve-domain-names">Unable to resolve domain names<a hidden class="anchor" aria-hidden="true" href="#unable-to-resolve-domain-names">#</a></h2>
+<p>A common DNS issue is the inability to resolve domain names, which can result in websites being inaccessible despite an active Internet connection.</p>
+<h3 id="causes-and-solutions">Causes and solutions<a hidden class="anchor" aria-hidden="true" href="#causes-and-solutions">#</a></h3>
+<ul>
+<li>
+<p><strong>Incorrect DNS server configuration:</strong> Ensure the DNS server addresses are correctly configured on client devices. To do so open a command prompt on the client device. Type nslookup <!-- raw HTML omitted --> and press <strong>Enter</strong>. Verify that the DNS server listed in the output is the correct one and is resolving domain names correctly. Note you have to enter the specific domain details, not type just &ldquo;domain&rdquo;. For example, you could use nslookup google.com.</p>
+</li>
+<li>
+<p><strong>DNS server downtime:</strong> Verify that the DNS server is operational and reachable. Use the ping command to test connectivity to the DNS server by typing ping &lt;DNS_server_IP_or_hostname&gt; into the command prompt. If successful, you should see replies indicating that the server is reachable. Note that you have to enter the details of the specific DNS server, IP address, or hostname, not just type “DNS_server_IP_or_hostname”. For example, you can ping 8.8.8.8, which is Google&rsquo;s public DNS server IP address.</p>
+</li>
+<li>
+<p><strong>Propagation delays:</strong> Checking with DNS resolvers can help. To query a DNS record use nslookup <!-- raw HTML omitted --> to verify propagation status. nslookup will display the IP address(es) associated with the domain name, along with the DNS server(s) that provided the resolution. And then use dig <!-- raw HTML omitted --> to view detailed DNS query information. Changes to DNS records can take time to propagate, so patience is required.</p>
+</li>
+</ul>
+<h3 id="commands">Commands<a hidden class="anchor" aria-hidden="true" href="#commands">#</a></h3>
+<ul>
+<li>
+<p>Use nslookup <!-- raw HTML omitted --> to query the DNS server for domain resolution.</p>
+</li>
+<li>
+<p>Use dig <!-- raw HTML omitted --> for detailed DNS query information.</p>
+</li>
+<li>
+<p>Use ping to test connectivity to the DNS server.</p>
+</li>
+</ul>
+<h2 id="dns-server-not-responding">DNS server not responding<a hidden class="anchor" aria-hidden="true" href="#dns-server-not-responding">#</a></h2>
+<p>When a DNS server does not respond, clients cannot resolve domain names, which can lead to a failure to access internet resources.</p>
+<h3 id="causes-and-solutions-1">Causes and solutions<a hidden class="anchor" aria-hidden="true" href="#causes-and-solutions-1">#</a></h3>
+<ul>
+<li>
+<p><strong>Server issues:</strong> Restart the DNS server or check for software updates.</p>
+</li>
+<li>
+<p><strong>Firewall settings:</strong> Ensure firewalls are not blocking DNS traffic (port 53).</p>
+</li>
+<li>
+<p><strong>Network issues:</strong> Check the network path between clients and the DNS server for disruptions.</p>
+</li>
+</ul>
+<h3 id="tools-and-commands">Tools and commands<a hidden class="anchor" aria-hidden="true" href="#tools-and-commands">#</a></h3>
+<ul>
+<li>
+<p>Use tracert <!-- raw HTML omitted --> if you are using your computer to trace the route and identify where the communication fails. Remember to enter the specific DNS server’s details, don&rsquo;t just type &ldquo;DNS server&rdquo;.</p>
+</li>
+<li>
+<p>Review DNS server logs for indications of failure. To do so, log into the server where the DNS service is running, and locate the directory where DNS server logs are stored. This can vary depending on the DNS server software and configuration.</p>
+</li>
+</ul>
+<h2 id="incorrect-dns-records">Incorrect DNS records<a hidden class="anchor" aria-hidden="true" href="#incorrect-dns-records">#</a></h2>
+<p>Incorrect DNS records can lead to domain resolution issues, such as pointing to the wrong IP address or non-existent domains.</p>
+<h3 id="causes-and-solutions-2">Causes and solutions<a hidden class="anchor" aria-hidden="true" href="#causes-and-solutions-2">#</a></h3>
+<ul>
+<li>
+<p><strong>Manual entry errors:</strong> Double-check DNS entries for typos or incorrect values by using nslookup and dig.</p>
+</li>
+<li>
+<p><strong>Expired records:</strong> Ensure DNS records are up to date and refresh if necessary. To do so you should log into your DNS management console. This could be hosted by your domain registrar, DNS hosting provider, or within your organization&rsquo;s network infrastructure (e.g., Windows Server DNS Manager). Locate the section where DNS records are managed. This is often labeled as DNS Zone, DNS Records, or similar terminology. Scan through the list of DNS records to identify any records that may have expired or are due for renewal. Modify or renew expired DNS records as necessary.</p>
+</li>
+</ul>
+<h3 id="tools-and-commands-1">Tools and commands<a hidden class="anchor" aria-hidden="true" href="#tools-and-commands-1">#</a></h3>
+<ul>
+<li>
+<p>Use nslookup and dig to verify DNS records.</p>
+</li>
+<li>
+<p>Check the DNS management console for correct configurations.</p>
+</li>
+</ul>
+<h2 id="using-diagnostic-utilities">Using diagnostic utilities<a hidden class="anchor" aria-hidden="true" href="#using-diagnostic-utilities">#</a></h2>
+<h3 id="ipconfig">ipconfig<a hidden class="anchor" aria-hidden="true" href="#ipconfig">#</a></h3>
+<p>ipconfig is a command-line tool used primarily on Windows systems to display and manage network configuration settings. It provides detailed information about network interfaces, IP addresses, DNS settings, and more, which is essential for network troubleshooting and configuration management.</p>
+<ul>
+<li>
+<p>ipconfig /flushdns can be used to clear the DNS resolver cache.</p>
+</li>
+<li>
+<p>ipconfig /all can be used to check DNS server settings on client devices.</p>
+</li>
+</ul>
+<h3 id="nslookup">nslookup<a hidden class="anchor" aria-hidden="true" href="#nslookup">#</a></h3>
+<p>nslookup is used to query DNS servers and obtain domain name information. It helps diagnose DNS resolution issues and verify DNS configurations. Common commands include:</p>
+<ul>
+<li>
+<p>nslookup <!-- raw HTML omitted --> to resolve a domain name to an IP address.</p>
+</li>
+<li>
+<p>nslookup followed by server address to switch to a different DNS server for queries.</p>
+</li>
+</ul>
+<h3 id="dig">dig<a hidden class="anchor" aria-hidden="true" href="#dig">#</a></h3>
+<p>dig (Domain Information Groper) is a powerful tool for querying DNS servers and analyzing DNS responses. It provides more detailed output than nslookup. Common commands include:</p>
+<ul>
+<li>
+<p>dig <!-- raw HTML omitted --> for a basic DNS query.</p>
+</li>
+<li>
+<p>dig +trace <!-- raw HTML omitted --> to perform a trace from the root servers to the authoritative server for the domain.</p>
+</li>
+<li>
+<p>dig @<!-- raw HTML omitted --> <!-- raw HTML omitted --> to query a specific DNS server.</p>
+</li>
+</ul>
+<h2 id="advanced-troubleshooting-techniques-for-dns">Advanced troubleshooting techniques for DNS<a hidden class="anchor" aria-hidden="true" href="#advanced-troubleshooting-techniques-for-dns">#</a></h2>
+<p>These are essentially the same as the techniques used for DHCP troubleshooting but can also be applied to DNS issues.</p>
+<h3 id="network-scanning">Network scanning<a hidden class="anchor" aria-hidden="true" href="#network-scanning">#</a></h3>
+<p>Network scanning helps identify all devices on the network, their assigned IP addresses, and potential conflicts.</p>
+<ul>
+<li>
+<p>Use nmap for comprehensive network scanning and host discovery.</p>
+</li>
+<li>
+<p>Use arp -a to view ARP cache and identify IP assignments.</p>
+</li>
+</ul>
+<h3 id="packet-analysis">Packet analysis<a hidden class="anchor" aria-hidden="true" href="#packet-analysis">#</a></h3>
+<p>Packet analysis provides detailed insights into network traffic, helping identify DNS communication issues.</p>
+<ul>
+<li>
+<p>Use Wireshark for capturing and analyzing network packets.</p>
+</li>
+<li>
+<p>Filter DNS traffic to isolate relevant packets for troubleshooting.</p>
+</li>
+</ul>
+<h3 id="server-log-analysis">Server log analysis<a hidden class="anchor" aria-hidden="true" href="#server-log-analysis">#</a></h3>
+<p>Analyzing server logs can reveal configuration errors, software bugs, or network issues impacting DNS services.</p>
+<ul>
+<li>Review DNS server logs for query handling and resolution failures.</li>
+</ul>
+<h2 id="practical-scenario-fixing-domain-name-resolution-failures">Practical scenario: Fixing domain name resolution failures<a hidden class="anchor" aria-hidden="true" href="#practical-scenario-fixing-domain-name-resolution-failures">#</a></h2>
+<p>Users report that they cannot access specific websites due to DNS resolution failures. These are the steps you should follow to resolve the problem.</p>
+<ol>
+<li>
+<p><strong>Verify DNS configuration:</strong> Use ipconfig /all to check DNS server settings on client devices.</p>
+</li>
+<li>
+<p><strong>Query DNS records:</strong> Use nslookup <!-- raw HTML omitted --> and dig <!-- raw HTML omitted --> to check the DNS resolution.</p>
+</li>
+<li>
+<p><strong>Check DNS server status:</strong> Ensure the DNS server is operational and reachable using ping and tracert if you are using your computer.</p>
+</li>
+<li>
+<p><strong>Update DNS records:</strong> Verify and correct DNS records in the DNS management console.</p>
+</li>
+<li>
+<p><strong>Clear DNS cache:</strong> Use ipconfig /flushdns to clear the DNS cache on client devices.</p>
+</li>
+</ol>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/dns/">DNS</a></li>
+      <li><a href="http://localhost:1313/tags/troubleshooting/">Troubleshooting</a></li>
+      <li><a href="http://localhost:1313/tags/network/">Network</a></li>
+      <li><a href="http://localhost:1313/tags/connectivity/">Connectivity</a></li>
+      <li><a href="http://localhost:1313/tags/guide/">Guide</a></li>
+      <li><a href="http://localhost:1313/tags/commands/">Commands</a></li>
+      <li><a href="http://localhost:1313/tags/diagnostics/">Diagnostics</a></li>
+      <li><a href="http://localhost:1313/tags/tools/">Tools</a></li>
+      <li><a href="http://localhost:1313/tags/dns-server/">Dns Server</a></li>
+      <li><a href="http://localhost:1313/tags/ipconfig/">Ipconfig</a></li>
+      <li><a href="http://localhost:1313/tags/nslookup/">Nslookup</a></li>
+      <li><a href="http://localhost:1313/tags/dig/">Dig</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">Saad Labs</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

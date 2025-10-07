@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IT Support on Saad Labs</title>
+    <link>http://localhost:1313/categories/it-support/</link>
+    <description>Recent content in IT Support on Saad Labs</description>
+    <generator>Hugo -- 0.149.0</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/categories/it-support/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Event Viewer and System Information</title>
+      <link>http://localhost:1313/posts/event_viewer_and_system_information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/event_viewer_and_system_information/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;These tools provide detailed insights into system operations and configurations, enabling users to troubleshoot and optimize their systems effectively.&lt;/p&gt;
+&lt;h2 id=&#34;event-viewer&#34;&gt;Event Viewer&lt;/h2&gt;
+&lt;p&gt;Event Viewer is a powerful Windows utility designed to provide detailed logs about significant system events. These events include application crashes, system warnings, security events, and more. Understanding how to navigate and interpret the data within Event Viewer is crucial for diagnosing and resolving system issues effectively.&lt;/p&gt;
+&lt;h3 id=&#34;accessing-event-viewer&#34;&gt;Accessing Event viewer&lt;/h3&gt;
+&lt;p&gt;To open Event Viewer, use the following steps:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
